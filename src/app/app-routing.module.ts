@@ -10,7 +10,7 @@ import { UpdateProductComponent } from './tabs/update-product.component';
 import { CartComponent } from './tabs/cart.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'products', pathMatch: 'full' },
+  { path: '', redirectTo: 'aboutUs', pathMatch: 'full' },
   { path: 'register', component: RegisterComponent },
   { path: 'login', component: LoginComponent },
   { path: 'password', component: PasswordComponent },
@@ -19,7 +19,7 @@ const routes: Routes = [
   { path: 'addProduct', component: AddProductComponent },
   { path: 'updateProduct/:id', component: UpdateProductComponent },
   { path: 'cart', component: CartComponent },
-  { path: '**', redirectTo: 'products', pathMatch: 'full' },
+  { path: '**', redirectTo: 'aboutUs', pathMatch: 'full' },
 ];
 
 @NgModule({

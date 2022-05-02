@@ -42,6 +42,6 @@ export class UpdateProductComponent implements OnInit {
   onSubmit() {
     const id = this.activeRoute.snapshot.paramMap.get('id');
     this.productsService.updateProduct(this.updateForm.value, id);
-    this.router.navigate(['']);
+    this.router.navigate(['products']);
   }
 }
