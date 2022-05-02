@@ -1,0 +1,47 @@
+<div class="container">
+  <form>
+    <div style="margin-bottom: 20px; font-size: 40px ; text-align: center">
+      Iniciar Sesión
+    </div>
+    <!-- Email input -->
+    <div style="margin-bottom: 35px">
+      <input
+        style="border: 2px solid black; border-radius: 0px"
+        placeholder="Email"
+        type="email"
+        id="formEmail"
+        class="form-control"
+      />
+    </div>
+
+    <!-- Password input -->
+    <div style="margin-bottom: 35px">
+      <input
+        style="border: 2px solid black; border-radius: 0px"
+        placeholder="Contraseña"
+        type="password"
+        id="formPassword"
+        class="form-control"
+      />
+    </div>
+    <div style="margin-bottom: 35px" class="col">
+      <!-- Simple link -->
+      <a routerLink="../password">¿Olvidaste la contraseña?</a>
+    </div>
+
+    <!-- Submit button -->
+    <button
+      class="form-control"
+      style="margin-bottom: 25px; border-radius: 0px; background-color: black; color: white "
+      type="button"
+    >
+      Iniciar Sesión
+    </button>
+
+    <!-- Register buttons -->
+    <div class="text-center">
+      <p>¿Es tu primera vez? <a routerLink="../register">Regístrate</a></p>
+    </div>
+  </form>
+  <div style="height: 248px"></div>
+</div>

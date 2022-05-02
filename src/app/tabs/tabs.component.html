@@ -1,0 +1,90 @@
+<!-- Navbar -->
+<nav
+  style="background-color: white"
+  class="navbar navbar-expand-lg navbar-light"
+>
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="true"
+      aria-label="Toggle navigation"
+    >
+      Deshabilitado
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div
+      style="margin-left: 15px;"
+      class="collapse navbar-collapse"
+      id="navbarSupportedContent"
+    >
+      <!-- Search -->
+      <div class="form-outline">
+        <input
+          style="border-color: black; border-radius: 0px"
+          type="search"
+          id="form1"
+          class="form-control"
+          placeholder="Buscar..."
+          aria-label="Search"
+        />
+      </div>
+      <!-- Center elements -->
+      <ul style="margin-left: 28%" class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li
+          style="border-top: 2.5px solid #BEBEBE; border-bottom: 2.5px solid #BEBEBE; margin-right: 30px"
+          class="nav-item"
+        >
+          <a class="nav-link" routerLink="products">Artículos</a>
+        </li>
+        <li
+          style="border-top: 2.5px solid #BEBEBE; border-bottom: 2.5px solid #BEBEBE"
+          class="nav-item"
+        >
+          <a class="nav-link" routerLink="aboutUs">Sobre Nosotros</a>
+        </li>
+        <li
+          style="border-top: 2.5px solid #BEBEBE; border-bottom: 2.5px solid #BEBEBE; margin-left: 30px"
+          class="nav-item"
+        >
+          <a class="nav-link" routerLink="addProduct">Agregar Artículo</a>
+        </li>
+      </ul>
+
+      <!-- Right elements -->
+      <div class="d-flex align-items-center">
+        <!-- Cart -->
+        <div style="margin-right: 30px">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/34/34627.png"
+            role="button"
+            height="25"
+            alt="Cart"
+            loading="lazy"
+            routerLink="cart"
+          />
+        </div>
+      </div>
+      <!-- Avatar Login -->
+      <div style="margin-right: 15px">
+        <a>
+          <img
+            routerLink="register"
+            type="button"
+            src="https://p7.hiclipart.com/preview/782/114/405/5bbc3519d674c.jpg"
+            class="rounded-circle"
+            height="25"
+            alt="Black and White Portrait of a Man"
+            loading="lazy"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>

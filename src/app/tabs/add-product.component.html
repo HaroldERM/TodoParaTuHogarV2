@@ -1,0 +1,66 @@
+<div class="container">
+  <form [formGroup]="itemForm" (ngSubmit)="onSubmit()" novalidate>
+    <div style="margin-bottom: 20px; font-size: 40px ; text-align: center">
+      Agregar Artículo
+    </div>
+    <!-- Nombre input -->
+    <div style="margin-bottom: 15px">
+      <input
+        formControlName="nombre"
+        style="border: 2px solid black; border-radius: 0px"
+        placeholder="Nombre (ejemplo: Abanico)"
+        type="text"
+        id="formNombre"
+        class="form-control"
+        required
+      />
+    </div>
+    <!-- Precio input -->
+    <div style="margin-bottom: 15px">
+      <input
+        formControlName="precio"
+        style="border: 2px solid black; border-radius: 0px"
+        placeholder="Precio (ejemplo: 14000)"
+        type="number"
+        id="formPrecio"
+        class="form-control"
+        required
+      />
+    </div>
+    <!-- Fecha input -->
+    <div style="margin-bottom: 15px">
+      <input
+        formControlName="fecha"
+        style="border: 2px solid black; border-radius: 0px"
+        placeholder="Fecha de ingreso (ejemplo: 30/05/2022)"
+        type="text"
+        id="formFecha"
+        class="form-control"
+        required
+      />
+    </div>
+
+    <!-- Descripción input -->
+    <div style="margin-bottom: 15px">
+      <textarea
+        formControlName="desc"
+        style="resize: none; height: 100px; width: 377px; border: 2px solid black; border-radius: 0px"
+        placeholder="Descripción"
+        id="formDesc"
+        class="form-control"
+        required
+      ></textarea>
+    </div>
+
+    <!-- Submit button -->
+    <button
+      [disabled]="!itemForm.valid"
+      class="btn btn-primary"
+      style="width: 377px; margin-bottom: 15px; border-radius: 0px; background-color: black; color: white "
+      type="submit"
+    >
+      Agregar Artículo
+    </button>
+  </form>
+  <div style="height: 227px"></div>
+</div>
